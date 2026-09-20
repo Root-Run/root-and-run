@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Archivo";
+    src: url("data:font/ttf;base64,__FONT_B64__") format("truetype");
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+  }
+
+  /* Identidad temporal, monocromática.
+     Referencia fijada por el cliente: Linear / Resend.
+     Sin color de acento: toda la jerarquía se resuelve por
+     valor de gris, peso y espacio. Rellenos planos, sin
+     degradados ni sombras. */
+  :root {
+    --fondo:   #08090A;  /* casi negro, no negro puro */
+    --primero: #F7F8F8;  /* blanco de texto */
+    --segundo: #8A8F98;  /* gris de lectura */
+    --tercero: #767C85;  /* gris de etiqueta — 4.74:1 sobre el fondo, AA */
+    --filete:  rgba(247, 248, 248, 0.10);
+    --marco:   rgba(247, 248, 248, 0.07);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--fondo);
+    font-family: "Archivo", sans-serif;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    padding: 76px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* marco interior apenas perceptible: la tarjeta se declara
+     como objeto, no como recorte */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 28px;
+    border: 1px solid var(--marco);
+    border-radius: 6px;
+    pointer-events: none;
+  }
+
+  /* ── Marca ────────────────────────────────── */
+  .marca {
+    width: 74px;
+    height: 74px;
+    border: 1px solid var(--filete);
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+  }
+
+  .monograma {
+    color: var(--primero);
+    font-size: 27px;
+    font-weight: 600;
+    font-stretch: 92%;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    transform: translateX(-0.5px);
+  }
+
+  /* ── Datos ────────────────────────────────── */
+  .nombre {
+    color: var(--primero);
+    font-size: 78px;
+    font-weight: 600;
+    font-stretch: 96%;
+    letter-spacing: -0.038em;
+    line-height: 1.0;
+  }
+
+  .linea {
+    margin-top: 24px;
+    color: var(--segundo);
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.012em;
+    max-width: 30ch;
+    text-wrap: balance;
+  }
+
+  .lugar {
+    margin-top: 38px;
+    color: var(--tercero);
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: 90%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="marca">
+    <div class="monograma">R&amp;R</div>
+  </div>
+
+  <div class="datos">
+    <div class="nombre">Root&nbsp;&amp;&nbsp;Run</div>
+    <p class="linea">Software que hace el trabajo que hoy haces a mano.</p>
+    <div class="lugar">Veracruz · Boca del Río, México</div>
+  </div>
+</body>
+</html>

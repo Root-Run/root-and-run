@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "design/og/og.template.html"
+        ],
+        "createdAt": "2026-09-20T21:25:38.451Z",
+        "reason": "La unica mayuscula del archivo es .lugar: una etiqueta de 29 caracteres (VERACRUZ / BOCA DEL RIO, MEXICO), no un pasaje de texto. La propia regla sanciona mayusculas en etiquetas cortas y titulos."
+      }
+    ]
+  }
+}
