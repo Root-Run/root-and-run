@@ -1,24 +1,40 @@
-# Docs locales
+# ── Dependencias y build ──────────────────────
+/node_modules
+/.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Entorno ───────────────────────────────────
+.env*
+
+# ── Logs ──────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Docs locales ──────────────────────────────
 /docs
 
-# Playwright CLI output (may contain credentials)
+# ── Playwright CLI (su salida puede traer credenciales) ──
 .playwright-cli/
 .playwright/
 
-# Skills instaladas via npx (reinstalables desde skills-lock.json)
+# ── Skills instaladas via npx (reinstalables desde skills-lock.json) ──
 .claude/skills/
 .claude/agents/
-
-# Config local del harness (hooks, permisos)
 .claude/settings.local.json
 
-# Node
-node_modules/
+# ── Impeccable: logs transitorios de las paginas de decision ──
+.impeccable/questions/
 
-# Artefactos de build de la imagen OG (se regeneran)
+# ── Artefactos de build de la imagen OG (se regeneran) ──
 design/og/og.build.html
 design/og/font.b64
-.playwright-cli/
 
-# Logs transitorios de las paginas de decision de impeccable
-.impeccable/questions/
+# ── Sistema ───────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem

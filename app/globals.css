@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/**
+ * Identidad temporal, monocromática. Referencias fijadas por el cliente:
+ * Linear / Resend. Sin color de acento: toda la jerarquía se resuelve por
+ * valor de gris, peso tipográfico y espacio.
+ *
+ * Estos valores son PROVISIONALES: caen cuando llegue la identidad
+ * definitiva del estudio externo. Por eso viven aquí, en un solo lugar.
+ * Ver PRODUCT.md > Brand Commitments.
+ */
+@theme {
+  --color-fondo: #08090a;
+  --color-primero: #f7f8f8;
+  --color-segundo: #8a8f98;
+  --color-tercero: #767c85;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  /* Filetes y marcos: blanco a muy baja opacidad, nunca gris sólido. */
+  --filete: rgb(247 248 248 / 0.1);
+  --marco: rgb(247 248 248 / 0.07);
+}
+
+body {
+  background: var(--color-fondo);
+  color: var(--color-primero);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+}
