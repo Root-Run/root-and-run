@@ -51,7 +51,7 @@ Puede revocar su consentimiento en cualquier momento, conforme a la sección 7\.
 
 Utilizamos proveedores de servicios tecnológicos que tratan datos por nuestra cuenta y bajo nuestras instrucciones, únicamente para las finalidades de este aviso:
 
-- **Hostinger International Ltd.** — alojamiento de la infraestructura.  
+- **Vercel Inc.** — alojamiento del sitio web.  
 - **Supabase Inc.** — base de datos y almacenamiento.  
 - **\[proveedor de correo\]** — correo electrónico.
 

@@ -207,8 +207,7 @@ export default function Privacidad() {
           </p>
           <ul>
             <li>
-              <strong>Hostinger International Ltd.</strong> — alojamiento de la
-              infraestructura.
+              <strong>Vercel Inc.</strong> — alojamiento del sitio web.
             </li>
             <li>
               <strong>Supabase Inc.</strong> — base de datos y almacenamiento.
