@@ -29,6 +29,7 @@ yarn-error.log*
 
 # ── Impeccable: logs transitorios de las paginas de decision ──
 .impeccable/questions/
+.impeccable/review/
 
 # ── Artefactos de build de la imagen OG (se regeneran) ──
 design/og/og.build.html

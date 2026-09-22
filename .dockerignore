@@ -1,0 +1,37 @@
+# Dependencias y build: se reinstalan y regeneran dentro de la imagen.
+node_modules
+.next
+out
+build
+
+# Control de versiones
+.git
+.gitignore
+
+# Herramienta del entorno de desarrollo, no del sitio
+.claude
+.impeccable
+.playwright
+.playwright-cli
+skills-lock.json
+AGENTS.md
+CLAUDE.md
+
+# Documentos de trabajo: no forman parte del artefacto desplegado
+docs
+design
+PRODUCT.md
+
+# El Markdown fuente del aviso legal no se sirve; la página lo transcribe
+privacidad
+
+# Entorno y logs
+.env*
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.pem

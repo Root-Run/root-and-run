@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Archivo";
+    src: url("data:font/ttf;base64,__FONT_B64__") format("truetype");
+    font-weight: 100 900;
+    font-stretch: 62% 125%;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+  }
+
+  body {
+    background: #08090a;
+    font-family: "Archivo", sans-serif;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    place-items: center;
+  }
+
+  /* El monograma ocupa casi todo el cuadro: a 32px lo unico que
+     sobrevive es la masa de las formas, asi que no se desperdicia
+     lienzo en margenes ni en un marco que se perderia igual. */
+  .monograma {
+    color: #f7f8f8;
+    font-size: 208px;
+    font-weight: 700;
+    font-stretch: 84%;
+    letter-spacing: -0.045em;
+    line-height: 1;
+    transform: translateX(-3px);
+  }
+</style>
+</head>
+<body>
+  <div class="monograma">R&amp;R</div>
+</body>
+</html>

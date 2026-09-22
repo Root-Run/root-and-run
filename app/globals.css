@@ -22,6 +22,8 @@
   /* Filetes y marcos: blanco a muy baja opacidad, nunca gris sólido. */
   --filete: rgb(247 248 248 / 0.1);
   --marco: rgb(247 248 248 / 0.07);
+
+  color-scheme: dark;
 }
 
 body {
@@ -29,4 +31,47 @@ body {
   color: var(--color-primero);
   font-family: var(--font-sans);
   font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Superficies del navegador. Lo que no dibujamos también lleva el diseño:
+ * sin esto, la selección, el cursor y el foco llegan con los grises por
+ * defecto de Firefox y Chrome, que no pertenecen a ningún sistema.
+ */
+::selection {
+  background: var(--color-primero);
+  color: var(--color-fondo);
+}
+
+:root {
+  caret-color: var(--color-primero);
+  accent-color: var(--color-primero);
+  scrollbar-color: var(--color-tercero) var(--color-fondo);
+  scrollbar-width: thin;
+}
+
+/* Un solo anillo de foco en todo el sitio, del mismo sistema de valor. */
+:focus-visible {
+  outline: 2px solid var(--color-primero);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a {
+  text-underline-offset: 0.22em;
+  text-decoration-thickness: from-font;
+}
+
+/**
+ * El brief prohíbe animaciones de entrada, parallax y contadores.
+ * Lo único que se mueve es la respuesta al puntero y al teclado.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }
