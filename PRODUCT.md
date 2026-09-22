@@ -137,18 +137,18 @@ Todo lo anterior es **provisional** y cae cuando llegue la identidad definitiva 
 **Correos:**
 
 - Público / comercial: `root.and.run.automations@gmail.com` — es el que va en la portada.
-- Privacidad y derechos ARCO: `carlossmg13@gmail.com` — es el que va en el aviso.
+- Privacidad y derechos ARCO: `root.and.run.automations@gmail.com` — el mismo de la portada.
 
-**Sustitución de marcadores en el aviso de privacidad (confirmada el 20 de septiembre de 2026):**
+**Sustitución de marcadores en el aviso de privacidad (confirmada el 20 de septiembre de 2026; `[correo]` actualizado el 21 de septiembre de 2026):**
 
 | Marcador | Sección | Valor |
 | :--- | :--- | :--- |
-| `[correo]` | 4 — negativa de finalidades secundarias | `carlossmg13@gmail.com` |
-| `[correo]` | 7 — derechos ARCO | `carlossmg13@gmail.com` |
+| `[correo]` | 4 — negativa de finalidades secundarias | `root.and.run.automations@gmail.com` |
+| `[correo]` | 7 — derechos ARCO | `root.and.run.automations@gmail.com` |
 | `[dominio]` | 11 — cambios al aviso | `rootandrun.com` |
 | `[proveedor de correo]` | 6 — encargados y terceros | Google LLC |
 
-**Esto es deliberado, no un descuido:** el visitante ve `root.and.run.automations@gmail.com` en la portada y `carlossmg13@gmail.com` en el aviso. Son dos canales distintos — contacto comercial y ejercicio de derechos ante el responsable. No unificar.
+**Unificado por decisión del responsable el 21 de septiembre de 2026:** la portada y el aviso usan el mismo correo, `root.and.run.automations@gmail.com`, tanto para contacto comercial como para el ejercicio de derechos ARCO. Hasta esa fecha el aviso usaba un correo personal distinto; no reintroducirlo.
 
 Ambos son cuentas de Gmail. No hay correo institucional de dominio propio todavía; es un estado temporal declarado por el usuario, no una decisión de marca.
 

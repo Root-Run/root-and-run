@@ -12,7 +12,7 @@ import Link from "next/link";
  *
  * Lo único sustituido son los cuatro marcadores, con los valores
  * confirmados por el responsable (ver PRODUCT.md > Brand Commitments):
- *   [correo] §4 y §7        -> carlossmg13@gmail.com
+ *   [correo] §4 y §7        -> root.and.run.automations@gmail.com
  *   [proveedor de correo] §6 -> Google LLC
  *   [dominio] §11            -> rootandrun.com
  *
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const CORREO_PRIVACIDAD = "carlossmg13@gmail.com";
+const CORREO_PRIVACIDAD = "root.and.run.automations@gmail.com";
 
 /**
  * Regreso al inicio. Se repite arriba y al pie: el documento mide

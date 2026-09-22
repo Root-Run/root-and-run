@@ -6,7 +6,7 @@
 
 **Carlos Morales García**, con domicilio en Condominio Tihuatlán número 41, Fraccionamiento Geo Villas del Puerto, C.P. 91777, Veracruz, Veracruz, México, es el responsable del tratamiento de sus datos personales.
 
-Correo de contacto para asuntos de privacidad: **carlossmg13@gmail.com**
+Correo de contacto para asuntos de privacidad: **root.and.run.automations@gmail.com**
 
 ## 2\. Datos personales que tratamos
 

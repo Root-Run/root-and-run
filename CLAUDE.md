@@ -38,13 +38,14 @@ Marcadores ya sustituidos, con valores confirmados por el responsable:
 
 | Marcador | Sección | Valor |
 | :--- | :--- | :--- |
-| `[correo]` | 4 y 7 | `carlossmg13@gmail.com` |
+| `[correo]` | 4 y 7 | `root.and.run.automations@gmail.com` |
 | `[proveedor de correo]` | 6 | Google LLC |
 | `[dominio]` | 11 | `rootandrun.com` |
 
-El correo público de la portada (`root.and.run.automations@gmail.com`) es
-**distinto a propósito** del correo del aviso. Son dos canales: contacto
-comercial y ejercicio de derechos ante el responsable. No unificar.
+La portada y el aviso usan el **mismo correo**,
+`root.and.run.automations@gmail.com`, para contacto comercial y para el
+ejercicio de derechos ARCO. Se unificó por decisión del responsable el 21 de
+septiembre de 2026. No volver a separarlos sin que el responsable lo pida.
 
 ## Stack fijo — no sujeto a propuesta
 
