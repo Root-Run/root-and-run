@@ -20,10 +20,43 @@ import Link from "next/link";
  * lo corrijas.
  */
 
+const URL_AVISO = "https://rootandrun.com/privacidad";
+const TITULO = "Aviso de Privacidad — Root & Run";
+const DESCRIPCION =
+  "Aviso de privacidad de Root & Run, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.";
+
+/**
+ * Next reemplaza `openGraph` y `twitter` COMPLETOS cuando una página los
+ * define: no los fusiona con los del layout. Por eso se repiten aquí el
+ * tipo, el locale, el nombre del sitio y la imagen, con los mismos valores
+ * que `app/layout.tsx`. Si cambian allá, cambian aquí.
+ */
+const IMAGEN_OG = {
+  url: "/og.png",
+  width: 1200,
+  height: 630,
+  alt: "Root & Run — estudio de desarrollo en Veracruz y Boca del Río, México.",
+};
+
 export const metadata: Metadata = {
-  title: "Aviso de Privacidad — Root & Run",
-  description:
-    "Aviso de privacidad de Root & Run, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.",
+  title: TITULO,
+  description: DESCRIPCION,
+  alternates: { canonical: URL_AVISO },
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    url: URL_AVISO,
+    siteName: "Root & Run",
+    title: TITULO,
+    description: DESCRIPCION,
+    images: [IMAGEN_OG],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITULO,
+    description: DESCRIPCION,
+    images: [IMAGEN_OG],
+  },
   robots: { index: false, follow: true },
 };
 
